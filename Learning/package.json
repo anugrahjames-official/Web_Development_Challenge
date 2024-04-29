@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "express": "^4.19.2",
+    "express-hbs": "^2.5.0",
     "readline-sync": "^1.4.10"
   }
 }
