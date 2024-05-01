@@ -1,0 +1,30 @@
+<section>
+  <div class="container-fluid">
+    <div class="row mt-2">
+      <div class="col-md-12 d-flex justify-content-start">
+        <a href="/admin/add-product" class="btn btn-success ms-auto">Add Product</a>
+      </div>
+        <table class="table mt-2">
+  <thead>
+    <tr>
+      <th scope="col">No</th>
+      <th scope="col">Title</th>
+      <th scope="col">Category</th>
+      <th scope="col">Description</th>
+      <th>Image</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each products}}
+    <tr>
+      <th scope="row">{{@index}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.category}}</td>
+      <td>{{this.description}}</td>
+      <td><img style="width: 50px;height: 50px" src="{{this.image}}"</td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>
+  </div>
+</section>
